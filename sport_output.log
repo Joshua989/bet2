@@ -1,94 +1,59 @@
 
-Processing match: Spain U19 - France U19 with target odds: 2.66
-Looking for match: Spain U19 - France U19
-Found match: Spain - France with similarity score 0.7777777777777778
+Processing match: Sreenidi Deccan FC - Inter Kashi FC with target odds: 2.62
+Looking for match: Sreenidi Deccan FC - Inter Kashi FC
+No match found for Sreenidi Deccan FC - Inter Kashi FC
+Match Sreenidi Deccan FC - Inter Kashi FC not found, continuing to next match
+
+Processing match: GKS Pniowek Pawlowice - KS Sleza Wroclaw with target odds: 2.75
+Looking for match: GKS Pniowek Pawlowice - KS Sleza Wroclaw
+Found match: GKS Pniowek Pawlowice - KS Sleza Wroclaw with similarity score 1.0
 Clicked on match, waiting for details page...
 Found market content section
 Found 3 odds elements
-Found odds: 2.65
+Found odds: 2.75
 Found odds: 3.40
-Found odds: 2.45
-Best matching odds: 2.65 (target was 2.66, difference: 0.010000000000000231)
+Found odds: 2.25
+Best matching odds: 2.75 (target was 2.75, difference: 0.0)
 Clicked on odds using JavaScript
-Navigating back to main page
 
-Processing match: Huracan - San Luis FC with target odds: 2.87
-Looking for match: Huracan - San Luis FC
-Found match: CA Huracan - San Luis FC with similarity score 0.9333333333333333
-Clicked on match, waiting for details page...
-Found market content section
-Found 3 odds elements
-Found odds: 2.95
-Found odds: 3.10
-Found odds: 2.30
-Best matching odds: 2.95 (target was 2.87, difference: 0.08000000000000007)
-Clicked on odds using JavaScript
-Navigating back to main page
+Processing match: Denmark U19 - Iceland U19 with target odds: 1.43
+Looking for match: Denmark U19 - Iceland U19
+No match found for Denmark U19 - Iceland U19
+Match Denmark U19 - Iceland U19 not found, continuing to next match
 
-Processing match: India - Maldives with target odds: 1.21
-Looking for match: India - Maldives
-Found match: India - Maldives with similarity score 1.0
-Clicked on match, waiting for details page...
-Found market content section
-Found 3 odds elements
-Found odds: 1.23
-Found odds: 6.40
-Found odds: 11.00
-Best matching odds: 1.23 (target was 1.21, difference: 0.020000000000000018)
-Clicked on odds using JavaScript
-Navigating back to main page
+Processing match: Germany U19 - Slovenia U19 with target odds: 1.28
+Looking for match: Germany U19 - Slovenia U19
+No match found for Germany U19 - Slovenia U19
+Match Germany U19 - Slovenia U19 not found, continuing to next match
 
-Processing match: AS Roma SRL - Bayer 04 Leverkusen SRL with target odds: 2.80
-Looking for match: AS Roma SRL - Bayer 04 Leverkusen SRL
-No match found for AS Roma SRL - Bayer 04 Leverkusen SRL
-Match AS Roma SRL - Bayer 04 Leverkusen SRL not found, continuing to next match
+Processing match: Audax Italiano - Union Espanola with target odds: 6.30
+Looking for match: Audax Italiano - Union Espanola
+No match found for Audax Italiano - Union Espanola
+Match Audax Italiano - Union Espanola not found, continuing to next match
 
-Processing match: FC Porto SRL - Arsenal FC SRL with target odds: 3.15
-Looking for match: FC Porto SRL - Arsenal FC SRL
-No match found for FC Porto SRL - Arsenal FC SRL
-Match FC Porto SRL - Arsenal FC SRL not found, continuing to next match
-
-Processing match: Highlands Park FC - Dube Continental FC with target odds: 1.78
-Looking for match: Highlands Park FC - Dube Continental FC
-No match found for Highlands Park FC - Dube Continental FC
-Match Highlands Park FC - Dube Continental FC not found, continuing to next match
-
-Processing match: UKS SMS Lodz - Rekord Bielsko-Biala with target odds: 1.34
-Looking for match: UKS SMS Lodz - Rekord Bielsko-Biala
-Found match: UKS SMS Lodz - Rekord Bielsko-Biala with similarity score 1.0
-Clicked on match, waiting for details page...
-Found market content section
-Found 3 odds elements
-Found odds: 1.37
-Found odds: 4.10
-Found odds: 6.40
-Best matching odds: 1.37 (target was 1.34, difference: 0.030000000000000027)
-Clicked on odds using JavaScript
-Navigating back to main page
-
-Successfully added 4 bets. Looking for betslip button...
+Successfully added 1 bets. Looking for betslip button...
 Looking for betslip button at the bottom of the page...
 Error clicking betslip button: Message: 
 Stacktrace:
-	GetHandleVerifier [0x00007FF7BF29FE45+26629]
-	(No symbol) [0x00007FF7BF206010]
-	(No symbol) [0x00007FF7BF09931A]
-	(No symbol) [0x00007FF7BF0EF8E7]
-	(No symbol) [0x00007FF7BF0EFB1C]
-	(No symbol) [0x00007FF7BF1434A7]
-	(No symbol) [0x00007FF7BF117AEF]
-	(No symbol) [0x00007FF7BF140169]
-	(No symbol) [0x00007FF7BF117883]
-	(No symbol) [0x00007FF7BF0E0550]
-	(No symbol) [0x00007FF7BF0E1803]
-	GetHandleVerifier [0x00007FF7BF5F72BD+3529853]
-	GetHandleVerifier [0x00007FF7BF60DA22+3621858]
-	GetHandleVerifier [0x00007FF7BF6024D3+3575443]
-	GetHandleVerifier [0x00007FF7BF36B77A+860474]
-	(No symbol) [0x00007FF7BF21088F]
-	(No symbol) [0x00007FF7BF20CBC4]
-	(No symbol) [0x00007FF7BF20CD66]
-	(No symbol) [0x00007FF7BF1FC2C9]
+	GetHandleVerifier [0x00007FF67333FE45+26629]
+	(No symbol) [0x00007FF6732A6010]
+	(No symbol) [0x00007FF67313931A]
+	(No symbol) [0x00007FF67318F8E7]
+	(No symbol) [0x00007FF67318FB1C]
+	(No symbol) [0x00007FF6731E34A7]
+	(No symbol) [0x00007FF6731B7AEF]
+	(No symbol) [0x00007FF6731E0169]
+	(No symbol) [0x00007FF6731B7883]
+	(No symbol) [0x00007FF673180550]
+	(No symbol) [0x00007FF673181803]
+	GetHandleVerifier [0x00007FF6736972BD+3529853]
+	GetHandleVerifier [0x00007FF6736ADA22+3621858]
+	GetHandleVerifier [0x00007FF6736A24D3+3575443]
+	GetHandleVerifier [0x00007FF67340B77A+860474]
+	(No symbol) [0x00007FF6732B088F]
+	(No symbol) [0x00007FF6732ACBC4]
+	(No symbol) [0x00007FF6732ACD66]
+	(No symbol) [0x00007FF67329C2C9]
 	BaseThreadInitThunk [0x00007FFF838A7344+20]
 	RtlUserThreadStart [0x00007FFF858826B1+33]
 
@@ -100,10 +65,9 @@ Found Book Bet button
 Clicked Book Bet button using JavaScript
 Successfully clicked Book Bet button
 Looking for booking code...
-BOOKING CODE: KKBYQU
+BOOKING CODE: JE66SL
 
 ========================
-BOOKING CODE: KKBYQU
+BOOKING CODE: JE66SL
 ========================
 
-Closing browser
