@@ -1,6 +1,5 @@
 FROM python:3.9-slim
 
-# Install system dependencies and Chrome
 RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     curl \
@@ -15,17 +14,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libxss1 \
     libappindicator3-1 \
     fonts-liberation \
-    chromium \
     && rm -rf /var/lib/apt/lists/*
 
-# Get the installed Chromium version
-RUN CHROME_VERSION=$(chromium --version | awk '{print $2}') && \
-    echo "Chromium version installed: $CHROME_VERSION"
+# Install Chromium manually
+RUN apt-get update && apt-get install -y chromium \
+    && rm -rf /var/lib/apt/lists/*
 
-# Install the correct ChromeDriver version
-RUN CHROME_VERSION=$(chromium --version | awk '{print $2}') && \
-    CHROMEDRIVER_URL="https://storage.googleapis.com/chrome-for-testing-public/${CHROME_VERSION}/linux64/chromedriver-linux64.zip" && \
-    wget -q "$CHROMEDRIVER_URL" -O /tmp/chromedriver.zip && \
+# Download the latest ChromeDriver
+RUN CHROMEDRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE) && \
+    wget -q "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" -O /tmp/chromedriver.zip && \
     unzip /tmp/chromedriver.zip -d /usr/local/bin/ && \
     chmod +x /usr/local/bin/chromedriver && \
     rm /tmp/chromedriver.zip
