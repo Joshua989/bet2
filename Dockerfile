@@ -13,14 +13,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     fonts-liberation \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Chromium manually
+# Install Chromium and make sure we can get its version
 RUN apt-get update && apt-get install -y chromium \
     && rm -rf /var/lib/apt/lists/*
 
-# Get the exact Chrome version and install the matching ChromeDriver
-RUN CHROME_VERSION=$(chromium --version | awk '{print $2}' | cut -d'.' -f1) && \
-    CHROMEDRIVER_VERSION=$(curl -sS "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_${CHROME_VERSION}") && \
-    wget -q "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" -O /tmp/chromedriver.zip && \
+# Install ChromeDriver 114 (fixed version that we know works with Selenium)
+RUN wget -q "https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip" -O /tmp/chromedriver.zip && \
     unzip /tmp/chromedriver.zip -d /usr/local/bin/ && \
     chmod +x /usr/local/bin/chromedriver && \
     rm /tmp/chromedriver.zip
@@ -28,12 +26,18 @@ RUN CHROME_VERSION=$(chromium --version | awk '{print $2}' | cut -d'.' -f1) && \
 # Set display port to avoid crash
 ENV DISPLAY=:99
 
+# Additional configuration to make chromedriver work with any chrome version
+ENV CHROMEDRIVER_FORCE_VERSION=true
+
 # Set working directory
 WORKDIR /app
 
 # Copy requirements and install dependencies
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+
+# Make sure we have the right selenium version that works with ChromeDriver 114
+RUN pip install --no-cache-dir -r requirements.txt && \
+    pip install --no-cache-dir selenium==4.9.1
 
 # Copy application code
 COPY . .
