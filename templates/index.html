@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bet9ja to SportyBet Converter</title>
+</head>
+<body>
+    <h1>Bet9ja to SportyBet Converter</h1>
+    
+    {% if error %}
+    <div style="color: red; margin-bottom: 20px;">
+        {{ error }}
+    </div>
+    {% endif %}
+    
+    <form method="POST" action="/">
+        <label for="betting_code">Enter Bet9ja Booking Code:</label><br>
+        <input type="text" id="betting_code" name="betting_code" required><br><br>
+        
+        <button type="submit">Process Code</button>
+    </form>
+    
+    <div id="loading" style="display: none; margin-top: 20px;">
+        <p>Processing your booking code. This may take a few minutes. Please wait...</p>
+    </div>
+    
+    <script>
+        document.querySelector('form').addEventListener('submit', function() {
+            document.getElementById('loading').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

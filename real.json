@@ -1,0 +1,43 @@
+{
+    "booking_code": "RNMP8Y",
+    "matches": [
+        {
+            "match_index": 16,
+            "match": "Spain U19 - France U19",
+            "odds": "2.66"
+        },
+        {
+            "match_index": 30,
+            "match": "Huracan - San Luis FC",
+            "odds": "2.87"
+        },
+        {
+            "match_index": 44,
+            "match": "India - Maldives",
+            "odds": "1.21"
+        },
+        {
+            "match_index": 58,
+            "match": "AS Roma SRL - Bayer 04 Leverkusen SRL",
+            "score": "0:0",
+            "odds": "2.80"
+        },
+        {
+            "match_index": 70,
+            "match": "FC Porto SRL - Arsenal FC SRL",
+            "score": "0:0",
+            "odds": "3.15"
+        },
+        {
+            "match_index": 82,
+            "match": "Highlands Park FC - Dube Continental FC",
+            "odds": "1.78"
+        },
+        {
+            "match_index": 96,
+            "match": "UKS SMS Lodz - Rekord Bielsko-Biala",
+            "odds": "1.34"
+        }
+    ],
+    "sporty_code": "KKBYQU"
+}
